@@ -7,11 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
+(NSDictionary * )launchOptions
+
 {
+    [Parse setApplicationId:@"4Zx9Yyw0qLPSpmNxukjKFwZRRX4j7F0C3mCLFgaP"
+                  clientKey:@"3b7zwQWMj409nVOlMh3rw1EEDFYtUFkWhQoPuOf9"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 
@@ -33,13 +39,22 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
+
 {
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
+
+
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end
