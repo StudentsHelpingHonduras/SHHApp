@@ -7,16 +7,20 @@
 //
 
 #import "MembersignupViewController.h"
-
+#import <Parse/Parse.h>
 @interface MembersignupViewController ()
 
 @end
 
+
 @implementation MembersignupViewController
 
+@synthesize textBox1;
+@synthesize textBox2;
+@synthesize textBox3;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+{self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
@@ -46,4 +50,39 @@
 }
 */
 
-@end
+
+
+- (void)myMethod {
+    PFUser *user = [PFUser user];
+    user.username = self.username;
+    user.password = self.password;
+    user.email = self.email;
+    
+
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"SUCCESS"
+                                                          message:@"Awaiting approval from admin" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertWithOkButton show];
+            
+
+        } else {
+            NSString *errorString = [error userInfo][@"error"];
+            // Show the errorString somewhere and let the user try again.
+            alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                          message:@"Please enter a valid email." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertWithOkButton show];
+        }
+    }];
+}
+
+- (IBAction)submitSignup:(id)sender {
+    self.email = textBox1.text;
+    self.username = textBox2.text;
+    self.password = textBox3.text;
+    
+    [self myMethod];
+};
+
+
+@end;

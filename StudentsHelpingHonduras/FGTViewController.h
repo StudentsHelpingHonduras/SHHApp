@@ -10,5 +10,7 @@
 
 
 @interface FGTViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textBox4;
+@property (weak, nonatomic) NSString *email;
 
 @end

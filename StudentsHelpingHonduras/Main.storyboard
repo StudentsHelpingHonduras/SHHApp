@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="-1467" y="-648"/>
         </scene>
-        <!--View Controller - For Members-->
+        <!--Memlogin View Controller - MemloginViewController-->
         <scene sceneID="WoL-oD-mtB">
             <objects>
-                <viewController id="gTy-VU-8Z6" customClass="FGTViewController" sceneMemberID="viewController">
+                <viewController title="MemloginViewController" id="gTy-VU-8Z6" customClass="MemloginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lv8-eK-cDQ"/>
                         <viewControllerLayoutGuide type="bottom" id="8hK-XE-ri0"/>
@@ -111,8 +111,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <action selector="Login:" destination="gTy-VU-8Z6" eventType="touchUpInside" id="sAv-ab-zUU"/>
-                                    <segue destination="zYc-xY-qgU" kind="push" id="POU-3e-gHY"/>
+                                    <action selector="enterusername:" destination="gTy-VU-8Z6" eventType="touchUpInside" id="LUp-aF-Vgl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ho-Ph-lyc">
@@ -122,7 +121,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUp:" destination="gTy-VU-8Z6" eventType="touchUpInside" id="J78-dM-gPs"/>
                                     <segue destination="5C0-lf-bpo" kind="push" id="Rbx-nn-W1f"/>
                                 </connections>
                             </button>
@@ -133,8 +131,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="forgot:" destination="gTy-VU-8Z6" eventType="touchUpInside" id="c9F-Y3-l1H"/>
-                                    <action selector="submit:" destination="gTy-VU-8Z6" eventType="touchUpInside" id="Ryi-Vg-X6u"/>
                                     <segue destination="1n3-xZ-EL2" kind="push" id="5Yv-ue-8Og"/>
                                 </connections>
                             </button>
@@ -142,15 +138,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="For Members" id="eWQ-PJ-J36"/>
+                    <connections>
+                        <outlet property="textBox5" destination="lvn-kM-JNM" id="OI5-Mw-Bdq"/>
+                        <outlet property="textBox6" destination="mrO-21-euB" id="RwY-Og-UJO"/>
+                        <segue destination="zYc-xY-qgU" kind="push" identifier="Login" id="WHG-kH-Tpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yo-od-zWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336" y="-1420"/>
+            <point key="canvasLocation" x="-362" y="-1408"/>
         </scene>
-        <!--View Controller-->
+        <!--Membersignup View Controller-->
         <scene sceneID="bD9-Wy-ctd">
             <objects>
-                <viewController id="5C0-lf-bpo" sceneMemberID="viewController">
+                <viewController id="5C0-lf-bpo" customClass="MembersignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="juE-fJ-sIf"/>
                         <viewControllerLayoutGuide type="bottom" id="0O1-0c-e2a"/>
@@ -166,52 +167,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7t-BB-w9F">
-                                <rect key="frame" x="20" y="111" width="280" height="30"/>
+                                <rect key="frame" x="18" y="111" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzI-Uz-EDB">
-                                <rect key="frame" x="20" y="149" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Your Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYP-cG-gUU">
-                                <rect key="frame" x="20" y="204" width="168" height="21"/>
+                                <rect key="frame" x="18" y="168" width="168" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvy-Jb-qa9">
-                                <rect key="frame" x="20" y="233" width="280" height="30"/>
+                                <rect key="frame" x="20" y="197" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u7-2V-fRW">
-                                <rect key="frame" x="20" y="269" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Your Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6f-CZ-k2G">
-                                <rect key="frame" x="20" y="337" width="165" height="21"/>
+                                <rect key="frame" x="19" y="257" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-n4-1do">
-                                <rect key="frame" x="20" y="402" width="49" height="30"/>
+                                <rect key="frame" x="134" y="335" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitSignup:" destination="5C0-lf-bpo" eventType="touchUpInside" id="zGz-yt-xpH"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-Rj-ume">
-                                <rect key="frame" x="20" y="366" width="280" height="30"/>
+                                <rect key="frame" x="20" y="286" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -220,6 +210,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5aX-Ii-Wkz"/>
+                    <connections>
+                        <outlet property="textBox1" destination="h7t-BB-w9F" id="CMw-zo-xrv"/>
+                        <outlet property="textBox2" destination="cvy-Jb-qa9" id="H7T-1X-ZqH"/>
+                        <outlet property="textBox3" destination="HtI-Rj-ume" id="MkI-RQ-krY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eua-Ul-mHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,13 +394,13 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuK-FL-Dvj">
-                                <rect key="frame" x="32" y="157" width="49" height="30"/>
+                                <rect key="frame" x="136" y="171" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="submit:" destination="1n3-xZ-EL2" eventType="touchUpInside" id="68D-GM-BpV"/>
+                                    <action selector="getEmail:" destination="1n3-xZ-EL2" eventType="touchUpInside" id="cbc-YN-0EA"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfR-uJ-0XU">
@@ -424,6 +419,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="GKB-0X-U0F"/>
+                    <connections>
+                        <outlet property="textBox4" destination="zfR-uJ-0XU" id="s6L-y5-O9b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4n4-sY-xDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
