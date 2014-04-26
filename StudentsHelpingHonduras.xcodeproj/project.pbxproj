@@ -26,6 +26,11 @@
 		2DD4924C1905CFFC00F23CA3 /* MembersignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4924B1905CFFC00F23CA3 /* MembersignupViewController.m */; };
 		2DF4DFD0190B81C70007A68A /* Member Login Page.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4DFCF190B81C70007A68A /* Member Login Page.png */; };
 		2DF4DFD2190B841B0007A68A /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4DFD1190B841B0007A68A /* blue.png */; };
+		2DF4DFDE190B90230007A68A /* AdminLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFDD190B90230007A68A /* AdminLoginViewController.m */; };
+		2DF4DFE1190B90370007A68A /* AdminSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE0190B90370007A68A /* AdminSignUpViewController.m */; };
+		2DF4DFE4190B90550007A68A /* AdminFGTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE3190B90550007A68A /* AdminFGTViewController.m */; };
+		2DF4DFE7190B9F5A0007A68A /* OldCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE6190B9F5A0007A68A /* OldCodeViewController.m */; };
+		2DF4DFEA190B9F650007A68A /* NewCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE9190B9F650007A68A /* NewCodeViewController.m */; };
 		7F8B8E7E18B5936600427295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8B8E7D18B5936600427295 /* Foundation.framework */; };
 		7F8B8E8018B5936600427295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8B8E7F18B5936600427295 /* CoreGraphics.framework */; };
 		7F8B8E8218B5936600427295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8B8E8118B5936600427295 /* UIKit.framework */; };
@@ -77,6 +82,16 @@
 		2DD4924B1905CFFC00F23CA3 /* MembersignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersignupViewController.m; sourceTree = "<group>"; };
 		2DF4DFCF190B81C70007A68A /* Member Login Page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Member Login Page.png"; path = "../../../Member Login Page.png"; sourceTree = "<group>"; };
 		2DF4DFD1190B841B0007A68A /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../blue.png; sourceTree = "<group>"; };
+		2DF4DFDC190B90230007A68A /* AdminLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminLoginViewController.h; sourceTree = "<group>"; };
+		2DF4DFDD190B90230007A68A /* AdminLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminLoginViewController.m; sourceTree = "<group>"; };
+		2DF4DFDF190B90370007A68A /* AdminSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminSignUpViewController.h; sourceTree = "<group>"; };
+		2DF4DFE0190B90370007A68A /* AdminSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminSignUpViewController.m; sourceTree = "<group>"; };
+		2DF4DFE2190B90550007A68A /* AdminFGTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminFGTViewController.h; sourceTree = "<group>"; };
+		2DF4DFE3190B90550007A68A /* AdminFGTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminFGTViewController.m; sourceTree = "<group>"; };
+		2DF4DFE5190B9F5A0007A68A /* OldCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldCodeViewController.h; sourceTree = "<group>"; };
+		2DF4DFE6190B9F5A0007A68A /* OldCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldCodeViewController.m; sourceTree = "<group>"; };
+		2DF4DFE8190B9F650007A68A /* NewCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCodeViewController.h; sourceTree = "<group>"; };
+		2DF4DFE9190B9F650007A68A /* NewCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCodeViewController.m; sourceTree = "<group>"; };
 		7F8B8E7A18B5936600427295 /* StudentsHelpingHonduras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsHelpingHonduras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8B8E7D18B5936600427295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F8B8E7F18B5936600427295 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +191,16 @@
 				7F8B8E8C18B5936600427295 /* AppDelegate.h */,
 				7F8B8E8D18B5936600427295 /* AppDelegate.m */,
 				7F8B8EAC18B5A50100427295 /* Main.storyboard */,
+				2DF4DFE5190B9F5A0007A68A /* OldCodeViewController.h */,
+				2DF4DFE6190B9F5A0007A68A /* OldCodeViewController.m */,
+				2DF4DFE8190B9F650007A68A /* NewCodeViewController.h */,
+				2DF4DFE9190B9F650007A68A /* NewCodeViewController.m */,
+				2DF4DFDC190B90230007A68A /* AdminLoginViewController.h */,
+				2DF4DFDD190B90230007A68A /* AdminLoginViewController.m */,
+				2DF4DFDF190B90370007A68A /* AdminSignUpViewController.h */,
+				2DF4DFE0190B90370007A68A /* AdminSignUpViewController.m */,
+				2DF4DFE2190B90550007A68A /* AdminFGTViewController.h */,
+				2DF4DFE3190B90550007A68A /* AdminFGTViewController.m */,
 				2DA0EE15190B6C0C005C37E9 /* SearchmemViewController.h */,
 				2DA0EE16190B6C0C005C37E9 /* SearchmemViewController.m */,
 				2DA0EE12190B5C77005C37E9 /* MemloginViewController.h */,
@@ -327,12 +352,17 @@
 			files = (
 				2DA0EE17190B6C0C005C37E9 /* SearchmemViewController.m in Sources */,
 				2D77145818FC9D8D005E5479 /* FGTViewController.m in Sources */,
+				2DF4DFE4190B90550007A68A /* AdminFGTViewController.m in Sources */,
+				2DF4DFE1190B90370007A68A /* AdminSignUpViewController.m in Sources */,
 				2DA0EE14190B5C77005C37E9 /* MemloginViewController.m in Sources */,
+				2DF4DFEA190B9F650007A68A /* NewCodeViewController.m in Sources */,
 				2D2864ED18F3584100F2A0E0 /* SMPageViewController.m in Sources */,
 				7F8B8E8E18B5936600427295 /* AppDelegate.m in Sources */,
 				2D2864F018F3627D00F2A0E0 /* MMViewController.m in Sources */,
 				2DD4924C1905CFFC00F23CA3 /* MembersignupViewController.m in Sources */,
 				7F8B8E8A18B5936600427295 /* main.m in Sources */,
+				2DF4DFDE190B90230007A68A /* AdminLoginViewController.m in Sources */,
+				2DF4DFE7190B9F5A0007A68A /* OldCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
