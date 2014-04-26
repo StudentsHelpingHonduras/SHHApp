@@ -61,8 +61,8 @@
 
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
-            alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"SUCCESS"
-                                                          message:@"Awaiting approval from admin" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"SUCCES"
+                message:@"Awaiting approval from admin" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertWithOkButton show];
             
 
@@ -70,7 +70,7 @@
             NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
             alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                          message:@"Please enter a valid email." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        message:@"Please enter a valid email." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertWithOkButton show];
         }
     }];
