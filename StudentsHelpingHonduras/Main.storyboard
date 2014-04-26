@@ -47,7 +47,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OIM-4k-jDt" kind="push" id="eOs-7k-TEB"/>
+                                    <segue destination="OIM-4k-jDt" kind="push" id="JQC-Tp-a11"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-7X-BsX">
@@ -297,7 +297,7 @@
             </objects>
             <point key="canvasLocation" x="1313" y="-1476"/>
         </scene>
-        <!--Adminsignup View Controller - For Administrators-->
+        <!--Adminsignup View Controller-->
         <scene sceneID="GTF-2t-9kG">
             <objects>
                 <viewController id="OIM-4k-jDt" customClass="AdminsignupViewController" sceneMemberID="viewController">
@@ -376,18 +376,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-5K-U9j">
+                                <rect key="frame" x="-20" y="7" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Administrator Login" id="qxZ-Hh-TBT"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="For Administrators" id="QOO-Na-cUB"/>
-                    <connections>
-                        <outlet property="textBox7" destination="mVc-FZ-F8M" id="jkl-X1-21n"/>
-                        <outlet property="textBox8" destination="csH-pN-ukb" id="hJQ-bW-lCd"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="QOO-Na-cUB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8d-hT-Edn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-368" y="-8"/>
+            <point key="canvasLocation" x="-362" y="-8"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eTT-W6-8ap">
@@ -974,7 +977,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="checkcode:" destination="Y3E-Sk-KKJ" eventType="touchUpInside" id="chJ-d3-0jz"/>
-                                    <segue destination="4u5-st-NHx" kind="push" id="6fF-2f-tZ4"/>
+                                    <segue destination="4u5-st-NHx" kind="push" identifier="CodeReset" id="6fF-2f-tZ4"/>
                                 </connections>
                             </button>
                         </subviews>

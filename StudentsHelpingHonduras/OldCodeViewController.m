@@ -37,9 +37,18 @@
 }
 - (void)checkcode {
     PFQuery *query = [PFQuery queryWithClassName:@"Admin_Code"];
-    [query getObjectInBackgroundWithId:@"xWMyZ4YEGZ" block:^(PFObject *gameScore, NSError *error) {
-        // Do something with the returned PFObject in the gameScore variable.
-        NSLog(@"%@", gameScore);
+    [query whereKey:@"Code" equalTo:self.oldcode];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+        [self performSegueWithIdentifier:@"CodeReset" sender:self];
+        }
+        else {
+            // The find failed
+            alertWithOkButton = [[UIAlertView alloc]initWithTitle:@"Error"
+        message:@"Enter a Valid Code" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertWithOkButton show];
+        }
     }];
 }
 - (IBAction)checkcode:(id)sender {
