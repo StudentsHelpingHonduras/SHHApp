@@ -10,9 +10,9 @@
 		2D2864ED18F3584100F2A0E0 /* SMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2864EC18F3584100F2A0E0 /* SMPageViewController.m */; };
 		2D2864F018F3627D00F2A0E0 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2864EF18F3627D00F2A0E0 /* MMViewController.m */; };
 		2D77145818FC9D8D005E5479 /* FGTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D77145718FC9D8D005E5479 /* FGTViewController.m */; };
-		2D7AF833190B7E730060B71C /* Social Media Page-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AF832190B7E730060B71C /* Social Media Page-1.png */; };
 		2DA0EE14190B5C77005C37E9 /* MemloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0EE13190B5C77005C37E9 /* MemloginViewController.m */; };
 		2DA0EE17190B6C0C005C37E9 /* SearchmemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0EE16190B6C0C005C37E9 /* SearchmemViewController.m */; };
+		2DC168BB190D9BAF0087894D /* Calendar Backgroun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC168BA190D9BAF0087894D /* Calendar Backgroun.png */; };
 		2DD492371905C54700F23CA3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD492361905C54700F23CA3 /* Parse.framework */; };
 		2DD492411905C64B00F23CA3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD492381905C64B00F23CA3 /* AudioToolbox.framework */; };
 		2DD492421905C64B00F23CA3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD492391905C64B00F23CA3 /* CFNetwork.framework */; };
@@ -24,8 +24,6 @@
 		2DD492481905C64B00F23CA3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4923F1905C64B00F23CA3 /* StoreKit.framework */; };
 		2DD492491905C64C00F23CA3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD492401905C64B00F23CA3 /* SystemConfiguration.framework */; };
 		2DD4924C1905CFFC00F23CA3 /* MembersignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4924B1905CFFC00F23CA3 /* MembersignupViewController.m */; };
-		2DF4DFD0190B81C70007A68A /* Member Login Page.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4DFCF190B81C70007A68A /* Member Login Page.png */; };
-		2DF4DFD2190B841B0007A68A /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4DFD1190B841B0007A68A /* blue.png */; };
 		2DF4DFDE190B90230007A68A /* AdminLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFDD190B90230007A68A /* AdminLoginViewController.m */; };
 		2DF4DFE1190B90370007A68A /* AdminSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE0190B90370007A68A /* AdminSignUpViewController.m */; };
 		2DF4DFE4190B90550007A68A /* AdminFGTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4DFE3190B90550007A68A /* AdminFGTViewController.m */; };
@@ -63,11 +61,11 @@
 		2D2864EF18F3627D00F2A0E0 /* MMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		2D77145618FC9D8D005E5479 /* FGTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTViewController.h; sourceTree = "<group>"; };
 		2D77145718FC9D8D005E5479 /* FGTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTViewController.m; sourceTree = "<group>"; };
-		2D7AF832190B7E730060B71C /* Social Media Page-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Social Media Page-1.png"; path = "../../../Social Media Page-1.png"; sourceTree = "<group>"; };
 		2DA0EE12190B5C77005C37E9 /* MemloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemloginViewController.h; sourceTree = "<group>"; };
 		2DA0EE13190B5C77005C37E9 /* MemloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemloginViewController.m; sourceTree = "<group>"; };
 		2DA0EE15190B6C0C005C37E9 /* SearchmemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchmemViewController.h; sourceTree = "<group>"; };
 		2DA0EE16190B6C0C005C37E9 /* SearchmemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchmemViewController.m; sourceTree = "<group>"; };
+		2DC168BA190D9BAF0087894D /* Calendar Backgroun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calendar Backgroun.png"; path = "../../../Calendar Backgroun.png"; sourceTree = "<group>"; };
 		2DD492361905C54700F23CA3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		2DD492381905C64B00F23CA3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2DD492391905C64B00F23CA3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -80,8 +78,6 @@
 		2DD492401905C64B00F23CA3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2DD4924A1905CFFC00F23CA3 /* MembersignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersignupViewController.h; sourceTree = "<group>"; };
 		2DD4924B1905CFFC00F23CA3 /* MembersignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersignupViewController.m; sourceTree = "<group>"; };
-		2DF4DFCF190B81C70007A68A /* Member Login Page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Member Login Page.png"; path = "../../../Member Login Page.png"; sourceTree = "<group>"; };
-		2DF4DFD1190B841B0007A68A /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../blue.png; sourceTree = "<group>"; };
 		2DF4DFDC190B90230007A68A /* AdminLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminLoginViewController.h; sourceTree = "<group>"; };
 		2DF4DFDD190B90230007A68A /* AdminLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminLoginViewController.m; sourceTree = "<group>"; };
 		2DF4DFDF190B90370007A68A /* AdminSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminSignUpViewController.h; sourceTree = "<group>"; };
@@ -214,9 +210,7 @@
 				2D2864EE18F3627D00F2A0E0 /* MMViewController.h */,
 				2D2864EF18F3627D00F2A0E0 /* MMViewController.m */,
 				7F8B8E8F18B5936600427295 /* Images.xcassets */,
-				2D7AF832190B7E730060B71C /* Social Media Page-1.png */,
-				2DF4DFCF190B81C70007A68A /* Member Login Page.png */,
-				2DF4DFD1190B841B0007A68A /* blue.png */,
+				2DC168BA190D9BAF0087894D /* Calendar Backgroun.png */,
 				7F8B8E8418B5936600427295 /* Supporting Files */,
 			);
 			path = StudentsHelpingHonduras;
@@ -326,12 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D7AF833190B7E730060B71C /* Social Media Page-1.png in Resources */,
 				7F8B8EAD18B5A50100427295 /* Main.storyboard in Resources */,
 				7F8B8E8818B5936600427295 /* InfoPlist.strings in Resources */,
+				2DC168BB190D9BAF0087894D /* Calendar Backgroun.png in Resources */,
 				7F8B8E9018B5936600427295 /* Images.xcassets in Resources */,
-				2DF4DFD0190B81C70007A68A /* Member Login Page.png in Resources */,
-				2DF4DFD2190B841B0007A68A /* blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
